@@ -1,0 +1,20 @@
+{
+  "name": "sunmkim",
+  "displayName": "Flutter fast anotation",
+  "description": "Create generate file fastly",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

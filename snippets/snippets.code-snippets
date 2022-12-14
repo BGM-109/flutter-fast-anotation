@@ -1,0 +1,81 @@
+{
+  "Create to Freezed": {
+    "prefix": "freezed",
+    "body": [
+      "import 'package:freezed_annotation/freezed_annotation.dart';",
+      "part '${TM_FILENAME_BASE}.freezed.dart';",
+      "",
+      "@freezed",
+      "class $1 with _$$1 {",
+      "}"
+    ],
+    "description": "Basic Freezed Class"
+  },
+  "Create to Freezed With Json": {
+    "prefix": "freezedwithjson",
+    "body": [
+      "import 'package:freezed_annotation/freezed_annotation.dart';",
+      "part '${TM_FILENAME_BASE}.freezed.dart';",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@freezed",
+      "class $1 with _$$1 {",
+      "const factory $1({",
+      "}) = _$1;",
+      "",
+      "factory $1.fromJson(Map<String, Object?> json)",
+      "      => _$$1FromJson(json);",
+      "}"
+    ],
+    "description": "Basic Freezed Class With Json"
+  },
+  "Create to Json": {
+    "prefix": "jsonserializable",
+    "body": [
+      "import 'package:json_annotation/json_annotation.dart';",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@JsonSerializable",
+      "class $1 {",
+      "",
+      "$1();",
+      "",
+      "factory $1.fromJson(Map<String, dynamic> json) => _$1FromJson(json);",
+      "Map<String, dynamic> toJson() => _$$1ToJson(this);",
+      "}"
+    ],
+    "description": "Basic Json Class"
+  },
+  "Create to Json With Generic": {
+    "prefix": "jsonserializablegeceric",
+    "body": [
+      "import 'package:json_annotation/json_annotation.dart';",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@JsonSerializable",
+      "class $1<T> {",
+      "",
+      "$1();",
+      "",
+      "factory $1.fromJson(Map<String, dynamic> jso, T Function(Object? json) fromJsonT) => _$1FromJson<T>(json, toJsonT);",
+      "Map<String, dynamic> toJson(Object Function(T) toJsonT) => _$$1ToJson<T>(this, toJsonT);",
+      "}"
+    ],
+    "description": "Basic Json Class with Generic"
+  },
+  "Create to Retofit": {
+    "prefix": "retrofit",
+    "body": [
+      "import 'package:retrofit/retrofit.dart';",
+      "import 'package:dio/dio.dart';",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "// Insert uri",
+      "@RestApi(baseUrl: '')",
+      "abstract class $1Repository {",
+      "  factory $1Repository(Dio dio, {String baseUrl}) = _$1Repository;",
+      "}"
+    ],
+    "description": "Basic Retrofit Class"
+  }
+}
