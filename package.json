@@ -16,5 +16,10 @@
         "path": "./snippets/snippets.code-snippets"
       }
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BGM-109/vs-extension-flutter-anotation-snippet"
+  },
+  "publisher": "sunmkim"
 }
