@@ -35,7 +35,7 @@
       "import 'package:json_annotation/json_annotation.dart';",
       "part '${TM_FILENAME_BASE}.g.dart';",
       "",
-      "@JsonSerializable",
+      "@JsonSerializable()",
       "class $1 {",
       "",
       "$1();",
