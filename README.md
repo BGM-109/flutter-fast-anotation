@@ -30,4 +30,3 @@ class  with _$ {
 ## build_runner shortcut
 
 cmd + shift + b -> flutter pub run build_runner build
-no type

@@ -40,7 +40,7 @@
       "",
       "$1();",
       "",
-      "factory $1.fromJson(Map<String, dynamic> json) => _$1FromJson(json);",
+      "factory $1.fromJson(Map<String, dynamic> json) => _$$1FromJson(json);",
       "Map<String, dynamic> toJson() => _$$1ToJson(this);",
       "}"
     ],
@@ -57,7 +57,7 @@
       "",
       "$1();",
       "",
-      "factory $1.fromJson(Map<String, dynamic> json, T Function(Object? json) fromJsonT) => _$1FromJson<T>(json, toJsonT);",
+      "factory $1.fromJson(Map<String, dynamic> json, T Function(Object? json) fromJsonT) => _$$1FromJson<T>(json, fromJsonT);",
       "Map<String, dynamic> toJson(Object Function(T) toJsonT) => _$$1ToJson<T>(this, toJsonT);",
       "}"
     ],
@@ -70,8 +70,7 @@
       "import 'package:dio/dio.dart';",
       "part '${TM_FILENAME_BASE}.g.dart';",
       "",
-      "// Insert uri",
-      "@RestApi(baseUrl: '')",
+      "@RestApi()",
       "abstract class $1Repository {",
       "  factory $1Repository(Dio dio, {String baseUrl}) = _$1Repository;",
       "}"

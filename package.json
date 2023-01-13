@@ -2,7 +2,7 @@
   "name": "sunmkim",
   "displayName": "Flutter fast anotation",
   "description": "Create generate file fastly",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.74.0"
   },
