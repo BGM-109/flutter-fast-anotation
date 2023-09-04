@@ -1,5 +1,7 @@
 # Flutter fast anotation generator
 
+*** do not open pub dev that save time ***
+
 This is simple generator freezed, json, retrofit
 
 You must type 'freezed' to generate a frozen file.
@@ -22,11 +24,19 @@ class  with _$ {
 ## Fetures
 
 - freezed: freezed generator
+- freezedabstract: Abstract Freezed Class
 - freezedwithjson: freezed with fromjson, tojson
 - jsonserialize: jsonserialize generator
 - jsonserializegeneric: jsonserialize using generic
 - retrofit: retrofit generator
+- typed go router: typed go router for go router builder
+- rcpk: Class with Riverpod Generator Provider that keepalive is true
+- avw: Async Value Class Helper for Riverpod
+
 
 ## build_runner shortcut
 
 cmd + shift + b -> flutter pub run build_runner build
+
+and set up options
+

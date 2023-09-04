@@ -7,12 +7,26 @@
       "",
       "@freezed",
       "class $1 with _$$1 {",
+      "const factory $1({",
+      "}) = _$1;",
       "}"
     ],
     "description": "Basic Freezed Class"
   },
+  "Create to Freezed Abstact": {
+    "prefix": "freezed abstract",
+    "body": [
+      "import 'package:freezed_annotation/freezed_annotation.dart';",
+      "part '${TM_FILENAME_BASE}.freezed.dart';",
+      "",
+      "@freezed",
+      "abstract class $1 with _$$1 {",
+      "}"
+    ],
+    "description": "Abstract Freezed Class"
+  },
   "Create to Freezed With Json": {
-    "prefix": "freezedwithjson",
+    "prefix": "freezed with json",
     "body": [
       "import 'package:freezed_annotation/freezed_annotation.dart';",
       "part '${TM_FILENAME_BASE}.freezed.dart';",
@@ -40,7 +54,7 @@
       "",
       "$1();",
       "",
-      "factory $1.fromJson(Map<String, dynamic> json) => _$$1FromJson(json);",
+      "factory $1.fromJson(Map<String, dynamic> json) => _\\$$1FromJson(json);",
       "Map<String, dynamic> toJson() => _$$1ToJson(this);",
       "}"
     ],
@@ -57,24 +71,108 @@
       "",
       "$1();",
       "",
-      "factory $1.fromJson(Map<String, dynamic> json, T Function(Object? json) fromJsonT) => _$$1FromJson<T>(json, fromJsonT);",
-      "Map<String, dynamic> toJson(Object Function(T) toJsonT) => _$$1ToJson<T>(this, toJsonT);",
+      "factory $1.fromJson(Map<String, dynamic> json, T Function(Object? json) fromJsonT) => _\\$$1FromJson<T>(json, fromJsonT);",
+      "Map<String, dynamic> toJson(Object Function(T) toJsonT) => _\\$$1ToJson<T>(this, toJsonT);",
       "}"
     ],
     "description": "Basic Json Class with Generic"
   },
-  "Create to Retofit": {
-    "prefix": "retrofit",
+  "base retorift": {
+    "prefix": "based retrofit",
     "body": [
       "import 'package:retrofit/retrofit.dart';",
       "import 'package:dio/dio.dart';",
       "part '${TM_FILENAME_BASE}.g.dart';",
       "",
       "@RestApi()",
-      "abstract class $1Repository {",
-      "  factory $1Repository(Dio dio, {String baseUrl}) = _$1Repository;",
+      "abstract class $1 {",
+      "  factory $1(Dio dio, {String baseUrl}) = _$1;",
       "}"
     ],
     "description": "Basic Retrofit Class"
+  },
+  // "named retrofit repository": {
+  //   "prefix": "retrofit named repository",
+  //   "body": [
+  //     "import 'package:retrofit/retrofit.dart';",
+  //     "import 'package:dio/dio.dart';",
+  //     "part '${TM_FILENAME_BASE}.g.dart';",
+  //     "",
+  //     "@RestApi()",
+  //     "abstract class $1Repository {",
+  //     "  factory $1Repository(Dio dio, {String baseUrl}) = _$1Repository;",
+  //     "}"
+  //   ],
+  //   "description": "Retrofit for repository patterns"
+  // },
+  // "named retrofit datesource": {
+  //   "prefix": "retrofit named datesource",
+  //   "body": [
+  //     "import 'package:retrofit/retrofit.dart';",
+  //     "import 'package:dio/dio.dart';",
+  //     "part '${TM_FILENAME_BASE}.g.dart';",
+  //     "",
+  //     "@RestApi()",
+  //     "abstract class $1DataSource {",
+  //     "  factory $1DataSource(Dio dio, {String baseUrl}) = _$1DataSource;",
+  //     "}"
+  //   ],
+  //   "description": "Retrofit for DataSource"
+  // },
+  "typed go route": {
+    "prefix": "typed go route",
+    "body": [
+      "// Don't make multiple files Manage only one file by making it part of the parent file",
+      "// part of 'app_routes.dart';",
+      "",
+      "@TypedGoRoute<$1Route>(path: '/$1')",
+      "class $1Route extends GoRouteData {",
+      "const $1Route();",
+      "",
+      "@override",
+      "Page<void> buildPage(BuildContext context, GoRouterState state) => $2();"
+    ],
+    "description": "Typed Go Route"
+  },
+  "class with riverpod generator provider that keepalive is true": {
+    "prefix": "rcpk",
+    "body": [
+      "'package:riverpod_annotation/riverpod_annotation.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@Riverpod(keepAlive: true)",
+      "//Press the Tap key to turn into a Pascal case.",
+      "$1 ${1/(.)(.*)/${1:/downcase}$2/}($1Ref ref) {",
+      " return $1();",
+      "}",
+      "class $1 {",
+      " $1();",
+      "}"
+    ],
+    "description": "Class with Riverpod Generator Provider that keepalive is true"
+  },
+  "async value widget for riverpod": {
+    "prefix": "avw",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class AsyncValueWidget<T> extends StatelessWidget {", 
+      "  const AsyncValueWidget({Key? key, required this.value, required this.data})",
+      "      : super(key: key);",
+      "  final AsyncValue<T> value;",
+      "  final Widget Function(T) data;",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return value.when(",
+      "      data: data,",
+      "      error: (e, st) => Center(child: Text(e.toString())),",
+      "      loading: () => const Center(child: CircularProgressIndicator()),",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Async Value Class Helper for Riverpod"
   }
 }

@@ -11,3 +11,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## 1.0.4
 
 - fix
+
+## 1.0.5
+
+- Add Typed go router
+- Changing Retrofit 
+- Add Helper 2 for Riverpod
+- Bug fix
