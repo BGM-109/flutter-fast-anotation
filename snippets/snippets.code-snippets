@@ -91,51 +91,92 @@
     ],
     "description": "Basic Retrofit Class"
   },
-  // "named retrofit repository": {
-  //   "prefix": "retrofit named repository",
-  //   "body": [
-  //     "import 'package:retrofit/retrofit.dart';",
-  //     "import 'package:dio/dio.dart';",
-  //     "part '${TM_FILENAME_BASE}.g.dart';",
-  //     "",
-  //     "@RestApi()",
-  //     "abstract class $1Repository {",
-  //     "  factory $1Repository(Dio dio, {String baseUrl}) = _$1Repository;",
-  //     "}"
-  //   ],
-  //   "description": "Retrofit for repository patterns"
-  // },
-  // "named retrofit datesource": {
-  //   "prefix": "retrofit named datesource",
-  //   "body": [
-  //     "import 'package:retrofit/retrofit.dart';",
-  //     "import 'package:dio/dio.dart';",
-  //     "part '${TM_FILENAME_BASE}.g.dart';",
-  //     "",
-  //     "@RestApi()",
-  //     "abstract class $1DataSource {",
-  //     "  factory $1DataSource(Dio dio, {String baseUrl}) = _$1DataSource;",
-  //     "}"
-  //   ],
-  //   "description": "Retrofit for DataSource"
-  // },
+  "named retrofit repository": {
+    "prefix": "retrofit named repository",
+    "body": [
+      "import 'package:retrofit/retrofit.dart';",
+      "import 'package:dio/dio.dart';",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@RestApi()",
+      "abstract class $1Repository {",
+      "  factory $1Repository(Dio dio, {String baseUrl}) = _$1Repository;",
+      "}"
+    ],
+    "description": "Retrofit for repository patterns"
+  },
+  "named retrofit datesource": {
+    "prefix": "retrofit named datesource",
+    "body": [
+      "import 'package:retrofit/retrofit.dart';",
+      "import 'package:dio/dio.dart';",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@RestApi()",
+      "abstract class $1DataSource {",
+      "  factory $1DataSource(Dio dio, {String baseUrl}) = _$1DataSource;",
+      "}"
+    ],
+    "description": "Retrofit for DataSource"
+  },
+  // Go Router Builder
   "typed go route": {
     "prefix": "typed go route",
     "body": [
       "// Don't make multiple files Manage only one file by making it part of the parent file",
       "// part of 'app_routes.dart';",
       "",
-      "@TypedGoRoute<$1Route>(path: '/$1')",
+      "@TypedGoRoute<$1Route>(path: '/${1/(.)(.*)/${1:/downcase}$2/}')",
       "class $1Route extends GoRouteData {",
       "const $1Route();",
       "",
       "@override",
-      "Page<void> buildPage(BuildContext context, GoRouterState state) => $2();"
+      "Widget build(BuildContext context, GoRouterState state) => $2();",
+      "}"
     ],
     "description": "Typed Go Route"
   },
+  "typed shell router": {
+    "prefix": "typed shell router",
+    "body": [
+      "// Don't make multiple files Manage only one file by making it part of the parent file",
+      "// part of 'app_routes.dart';",
+      "",
+      "@TypedShellRoute<$1ShellRoute>()",
+      "class $1ShellRoute extends ShellRouteData {",
+      "const $1ShellRoute();",
+      "",
+      "@override",
+      "Widget build(BuildContext context, GoRouterState state, Widget navigator) => $2(child: navigator);",
+      "}"
+    ],
+    "description": "Typed Shell Route"
+  },
+  "typed stateful shell router": {
+    "prefix": "typed stateful shell router",
+    "body": [
+      "// Don't make multiple files Manage only one file by making it part of the parent file",
+      "// part of 'app_routes.dart';",
+      "",
+      "@TypedStatefulShellRoute<$1StatefulShellRoute>(branches: [])",
+      "class $1StatefulShellRoute extends StatefulShellRouteData {",
+      "const $1StatefulShellRoute();",
+      "",
+      "@override",
+      "Widget build(BuildContext context, GoRouterState state, StatefulNavigationShell navigationShell) => navigationShell;",
+      "static Widget navigatorContainerBuilder(BuildContext context,",
+      "StatefulNavigationShell navigationShell, List<Widget> children) {",
+      "return $2(",
+      "navigationShell: navigationShell,",
+      "children: children,",
+      ");",
+      "}"
+    ],
+    "description": "Typed Go Route"
+  },
+  // Go Router End
   "class with riverpod generator provider that keepalive is true": {
-    "prefix": "rcpk",
+    "prefix": "riverpod class with provider keepalived",
     "body": [
       "'package:riverpod_annotation/riverpod_annotation.dart';",
       "",
@@ -149,15 +190,14 @@
       "class $1 {",
       " $1();",
       "}"
-    ],
-    "description": "Class with Riverpod Generator Provider that keepalive is true"
+    ]
   },
   "async value widget for riverpod": {
-    "prefix": "avw",
+    "prefix": "async value widget for riverpod",
     "body": [
       "import 'package:flutter/material.dart';",
       "",
-      "class AsyncValueWidget<T> extends StatelessWidget {", 
+      "class AsyncValueWidget<T> extends StatelessWidget {", // 템플릿 파라미터 추가
       "  const AsyncValueWidget({Key? key, required this.value, required this.data})",
       "      : super(key: key);",
       "  final AsyncValue<T> value;",
@@ -172,7 +212,6 @@
       "    );",
       "  }",
       "}"
-    ],
-    "description": "Async Value Class Helper for Riverpod"
+    ]
   }
 }
