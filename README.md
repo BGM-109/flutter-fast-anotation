@@ -21,6 +21,8 @@ class  with _$ {
 
 ```
 
+![ezgif com-gif-maker](https://github.com/BGM-109/flutter-fast-anotation/assets/34917143/ff58e7fc-731b-4b19-b291-bb135815dbcf)
+
 ## Fetures
 
 - freezed: freezed generator
