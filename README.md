@@ -38,6 +38,13 @@ class  with _$ {
 - shellRouteDataClass
 - statfulShellRouteDataClass
 
+## Feature 2
+
+open dartj in vscode
+dartj is a powerful json to dart tool.
+
+![f2](https://github.com/BGM-109/flutter-fast-anotation/assets/34917143/e0c3b6ae-6b2a-4b9a-b8dc-a6ed91c57adf)
+
 ## build_runner shortcut
 
 cmd + shift + b -> flutter pub run build_runner build
