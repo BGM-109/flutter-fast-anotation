@@ -43,7 +43,7 @@ class  with _$ {
 open dartj in vscode
 dartj is a powerful json to dart tool.
 
-![f2](https://github.com/BGM-109/flutter-fast-anotation/assets/34917143/e0c3b6ae-6b2a-4b9a-b8dc-a6ed91c57adf)
+![f23](https://github.com/BGM-109/flutter-fast-anotation/assets/34917143/d576f054-fbba-4657-9d3a-06ce61848c39)
 
 ## build_runner shortcut
 
