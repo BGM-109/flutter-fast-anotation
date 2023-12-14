@@ -1,8 +1,8 @@
 {
-  "name": "freezedcat",
-  "displayName": "Freezed Cat",
+  "name": "sunmkim",
+  "displayName": "Flutter fast anotation",
   "description": "Do not leave vscode",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -19,8 +19,8 @@
     ],
     "commands": [
       {
-        "command": "freeedcat.openDartJ",
-        "title": "FreezedCat: Open DartJ"
+        "command": "sunmkim.openDartJ",
+        "title": "Open DartJ: Open DartJ"
       }
     ]
   },

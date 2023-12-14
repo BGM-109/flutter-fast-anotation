@@ -29,3 +29,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Change snippets name
 - New Feature - Open Dartj in vscode
 - Change package name
+
+## 1.0.8
+
+- Undo name...
