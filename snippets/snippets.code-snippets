@@ -1,6 +1,6 @@
 {
   "Create to Freezed": {
-    "prefix": "freezed",
+    "prefix": "freezedClass",
     "body": [
       "import 'package:freezed_annotation/freezed_annotation.dart';",
       "part '${TM_FILENAME_BASE}.freezed.dart';",
@@ -14,7 +14,7 @@
     "description": "Basic Freezed Class"
   },
   "Create to Freezed Abstact": {
-    "prefix": "freezed abstract",
+    "prefix": "freezedA-Class",
     "body": [
       "import 'package:freezed_annotation/freezed_annotation.dart';",
       "part '${TM_FILENAME_BASE}.freezed.dart';",
@@ -26,7 +26,7 @@
     "description": "Abstract Freezed Class"
   },
   "Create to Freezed With Json": {
-    "prefix": "freezed with json",
+    "prefix": "freezedClassWithJson",
     "body": [
       "import 'package:freezed_annotation/freezed_annotation.dart';",
       "part '${TM_FILENAME_BASE}.freezed.dart';",
@@ -44,7 +44,7 @@
     "description": "Basic Freezed Class With Json"
   },
   "Create to Json": {
-    "prefix": "jsonserializable",
+    "prefix": "jsonClass",
     "body": [
       "import 'package:json_annotation/json_annotation.dart';",
       "part '${TM_FILENAME_BASE}.g.dart';",
@@ -61,7 +61,7 @@
     "description": "Basic Json Class"
   },
   "Create to Json With Generic": {
-    "prefix": "jsonserializablegeceric",
+    "prefix": "jsonClassGeneric",
     "body": [
       "import 'package:json_annotation/json_annotation.dart';",
       "part '${TM_FILENAME_BASE}.g.dart';",
@@ -78,7 +78,7 @@
     "description": "Basic Json Class with Generic"
   },
   "base retorift": {
-    "prefix": "based retrofit",
+    "prefix": "retrofitClass",
     "body": [
       "import 'package:retrofit/retrofit.dart';",
       "import 'package:dio/dio.dart';",
@@ -92,7 +92,7 @@
     "description": "Basic Retrofit Class"
   },
   "named retrofit repository": {
-    "prefix": "retrofit named repository",
+    "prefix": "retrofitRClass",
     "body": [
       "import 'package:retrofit/retrofit.dart';",
       "import 'package:dio/dio.dart';",
@@ -106,7 +106,7 @@
     "description": "Retrofit for repository patterns"
   },
   "named retrofit datesource": {
-    "prefix": "retrofit named datesource",
+    "prefix": "retrofitDSClass",
     "body": [
       "import 'package:retrofit/retrofit.dart';",
       "import 'package:dio/dio.dart';",
@@ -121,7 +121,7 @@
   },
   // Go Router Builder
   "typed go route": {
-    "prefix": "typed go route",
+    "prefix": "goRouteDataClass",
     "body": [
       "// Don't make multiple files Manage only one file by making it part of the parent file",
       "// part of 'app_routes.dart';",
@@ -137,7 +137,7 @@
     "description": "Typed Go Route"
   },
   "typed shell router": {
-    "prefix": "typed shell router",
+    "prefix": "shellRouteDataClass",
     "body": [
       "// Don't make multiple files Manage only one file by making it part of the parent file",
       "// part of 'app_routes.dart';",
@@ -153,7 +153,7 @@
     "description": "Typed Shell Route"
   },
   "typed stateful shell router": {
-    "prefix": "typed stateful shell router",
+    "prefix": "statefulShellRouteDataClass",
     "body": [
       "// Don't make multiple files Manage only one file by making it part of the parent file",
       "// part of 'app_routes.dart';",
@@ -176,7 +176,7 @@
   },
   // Go Router End
   "class with riverpod generator provider that keepalive is true": {
-    "prefix": "riverpod class with provider keepalived",
+    "prefix": "riverpodClassKeepAliveWithClass",
     "body": [
       "'package:riverpod_annotation/riverpod_annotation.dart';",
       "",
@@ -193,7 +193,7 @@
     ]
   },
   "async value widget for riverpod": {
-    "prefix": "async value widget for riverpod",
+    "prefix": "asyncvaluewidget",
     "body": [
       "import 'package:flutter/material.dart';",
       "",

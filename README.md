@@ -1,6 +1,7 @@
 # Flutter fast anotation generator
 
 **_ do not open pub dev that save time _**
+** Do not leave vscode **
 
 This is simple generator freezed, json, retrofit
 
@@ -23,19 +24,19 @@ class  with _$ {
 
 ![ezgif com-gif-maker](https://github.com/BGM-109/flutter-fast-anotation/assets/34917143/ff58e7fc-731b-4b19-b291-bb135815dbcf)
 
-## Fetures
+## ❗️ Fetures 1
 
-- freezed: freezed generator
-- freezedabstract: free
-- freezedwithjson: freezed with fromjson, tojson
-- jsonserialize: jsonserialize generator
-- jsonserializegeneric: jsonserialize using generic
-- retrofit: retrofit generator
-- typed go router: typed go router for go router builder
-- typed shell router
-- typed shell stateful router
-- rcpk: Class with Riverpod Generator Provider that keepalive is true
-- avw: Async Value Class Helper for Riverpod
+- freezedClass
+- freezedA-Class
+- freezedWithJson
+- jsonClass
+- jsonClassGeneric
+- retrofitClass
+- retrofitRClass
+- retrofitDSClass
+- goRouteDataClass
+- shellRouteDataClass
+- statfulShellRouteDataClass
 
 ## build_runner shortcut
 

@@ -23,3 +23,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - typed shellrouter, typed shell statful router
 - bug fix
+
+## 1.0.7
+
+- Change snippets name
+- New Feature - Open Dartj in vscode
+- Change package name
