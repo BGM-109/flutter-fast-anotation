@@ -21,8 +21,21 @@
       {
         "command": "sunmkim.openDartJ",
         "title": "Open DartJ: Open DartJ"
+      },
+      {
+        "command": "sunmkim.createIndex",
+        "title": "🔨 Create an index file from which all dart files in this folder are exported"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "sunmkim.createIndex",
+          "group": "z_commands"
+        }
+      ]
+    }
   },
   "repository": {
     "type": "git",

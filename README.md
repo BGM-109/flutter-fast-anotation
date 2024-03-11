@@ -45,6 +45,11 @@ dartj is a powerful json to dart tool.
 
 ![f23](https://github.com/BGM-109/flutter-fast-anotation/assets/34917143/d576f054-fbba-4657-9d3a-06ce61848c39)
 
+## Feature 3
+
+Creates an export of all the dart files in that folder.
+You can solve complex imports.
+
 ## build_runner shortcut
 
 cmd + shift + b -> flutter pub run build_runner build
